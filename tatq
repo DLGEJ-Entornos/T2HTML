@@ -1,0 +1,53 @@
+[33mcommit c390b696325dfec7047a9d763b1ae08fd07f65a9[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: DLGEJ-Entornos <delaguia19905@iesmarenostrum.com>
+Date:   Thu Oct 10 17:41:54 2019 +0200
+
+    servicios basico acabado
+
+[33mcommit e13a5ca4537e8c415308b714b7e7fab2c4760da1[m
+Author: DLGEJ-Entornos <delaguia19905@iesmarenostrum.com>
+Date:   Thu Oct 10 13:24:58 2019 +0200
+
+    contactos basico acabado
+
+[33mcommit 175a4d3b0235d5b73d64e75d4f2b7693b45f27cf[m
+Author: DLGEJ-Entornos <delaguia19905@iesmarenostrum.com>
+Date:   Thu Oct 10 12:26:06 2019 +0200
+
+    index basico acabado
+
+[33mcommit cbb13063d091552c7db51aab6a18a7865805bee9[m
+Author: DLGEJ-Entornos <delaguia19905@iesmarenostrum.com>
+Date:   Thu Oct 10 00:45:04 2019 +0200
+
+    subiendo directorios css y js y elminando test claves guard en --local
+
+[33mcommit 522710369e280251c0e446f0abc321226edb915b[m
+Author: DLGEJ-Entornos <delaguia19905@iesmarenostrum.com>
+Date:   Thu Oct 10 00:41:24 2019 +0200
+
+    probando las claves guardadas (en teoria) localmente que no deberia pedirlas al hacer push
+
+[33mcommit 2016e90dcc93ab1d26fa45fafcef5fe7582606c0[m
+Author: DLGEJ-Entornos <delaguia19905@iesmarenostrum.com>
+Date:   Thu Oct 10 00:11:37 2019 +0200
+
+    borrando archivo de test y haciendo push para que el guardado de password se efectue 'credential.helper store' para --local
+
+[33mcommit 830e3ef63c6edeb6934e9115608ca71a21dd94b9[m
+Author: DLGEJ-Entornos <delaguia19905@iesmarenostrum.com>
+Date:   Thu Oct 10 00:06:57 2019 +0200
+
+    sincronizando usb con repo desde casa para T2HTML de Interfaces
+
+[33mcommit 2cf70eeaacd946d706d07a9a17f53efb03db27cd[m
+Author: DLGEJ-Entornos <delaguia19905@iesmarenostrum.com>
+Date:   Tue Oct 8 18:50:44 2019 +0200
+
+    commitPruebaVSCODE
+
+[33mcommit c87bd08c4b0a811490e15efca1f6cd487049d955[m
+Author: delaguia19905 <delaguia19905@iesmarenostrum.com>
+Date:   Mon Oct 7 18:40:44 2019 +0200
+
+    commit inicial de prueba desde sourcetree
