@@ -34,6 +34,7 @@
     <meta name="description" content="Aprende de forma clara y amena Desarrollo Web, Programación, Administración de sistemas, curiosidades informáticas y conocimientos
     practicos y utiles del mundo de la informática. Tenemos soluciones para tus problemas comunes en el mundo del desarrollo, explicados de forma directa y efectiva,
     aprende increibles herramientas y tecnologías que te serán de gran utilidad.">
+    <link rel="stylesheet" href="estilos.css">
     <link rel="icon" href="img/LOGOcafe.png">
     <link href="img/LOGOcafe.png" rel="apple-touch-icon" />
 
@@ -54,47 +55,47 @@
     </nav>
 
     <br>
-    <form>
-        <fieldset>
-            <legend>DATOS PERSONALES</legend>
+    <main>
+        <form>
+            <fieldset>
+                <legend>DATOS PERSONALES</legend>
+                <div>
+                    <input required placeholder="Nombre" autofocus name='nombre' type='text' /><br>
+                    <input required placeholder="Apellidos" name='apellidos' type='text' /><br>
+                    <input required placeholder="Teléfono" name='tel' type='tel' /><br>
+                    <input required placeholder="Email" name='email' type='email' /><br><br>
+                    <input type="number" required placeholder="Edad" name="edad" min="18" max="99"><br><br>
+    
+                    <label>Sexo: </label> <br>
+                    <select name="select">
+                        <option value="value1">Hombre</option>
+                        <option value="value2" selected>Mujer</option>
+                    </select><br><br>
+    
+                </div>
+            </fieldset>
+    
+            <fieldset>
+                <legend>INDICA TU CONSULTA</legend>
+                <textarea required name="textarea" rows="10" cols="50">Escribe aquí tu mensaje</textarea><br>
+                <input checked type="checkbox" name="polYcookies" id="polCook">
+                ¿Aceptas la <a href="#">política de privacidad y cookies</a>?
+            </fieldset>
+            <br>
             <div>
-                <input required placeholder="Nombre" autofocus name='nombre' type='text' /><br>
-                <input required placeholder="Apellidos" name='apellidos' type='text' /><br>
-                <input required placeholder="Teléfono" name='tel' type='tel' /><br>
-                <input required placeholder="Email" name='email' type='email' /><br><br>
-                <input type="number" required placeholder="Edad" name="edad" min="18" max="99"><br><br>
-
-                <label>Sexo: </label> <br>
-                <select name="select">
-                    <option value="value1">Hombre</option>
-                    <option value="value2" selected>Mujer</option>
-                </select><br><br>
-
+                <input type="submit" value="Enviar" />
+                <input type="reset" value="Resetear"> <br>
             </div>
-        </fieldset>
-
-        <fieldset>
-            <legend>INDICA TU CONSULTA</legend>
-            <textarea required name="textarea" rows="10" cols="50">Escribe aquí tu mensaje</textarea><br>
-            <input checked type="checkbox" name="polYcookies" id="polCook">
-            ¿Aceptas la <a href="#">política de privacidad y cookies</a>?
-        </fieldset>
-        <br>
-        <div>
-            <input type="submit" value="Enviar" />
-            <input type="reset" value="Resetear"> <br>
-        </div>
-    </form><br>
-    <address>
-        <h3>Datos de Contacto</h3>
-        <p>Calle Lorem Ipsum 3 01001 Alicante</p>
-        <a href="mailto:cafeprogramador@cafepro.com">cafeprogramador@cafepro.com</a><br>
-        <a href="tel:+34911049620">911049620</a>
-
-    </address>
+        </form><br>
+        <address>
+            <h3>Datos de Contacto</h3>
+            <p>Calle Lorem Ipsum 3 01001 Alicante</p>
+            <a href="mailto:cafeprogramador@cafepro.com">cafeprogramador@cafepro.com</a><br>
+            <a href="tel:+34911049620">911049620</a>
+        </address>
+    </main>
     
     </div>
-
     <aside>
         <h3>Archivos</h3>
         <ul>
