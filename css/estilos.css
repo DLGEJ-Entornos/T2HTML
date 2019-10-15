@@ -1,28 +1,49 @@
+@import url('https://fonts.googleapis.com/css?family=Acme&display=swap');
 *{
     margin: 0px;
     padding: 0px;
-    font-family: "Roboto", Arial, Tahoma, sans-serif;
-
+    /* font-family: 'Acme', sans-serif; */
+}
+body{
+    background-color: #FEFFEA;
 }
 /* Header and Nav */
 header{
+    color: #593B21;
     width: 100%;
     height: 70px;  
     background-color: #F7F9FA;
+    border: 1px solid red;
+    margin-bottom: 20em;
+    background-color: #C69C72;
+    font-family: 'Acme', sans-serif;
 }
 nav{
-    width: 1024px;
+    /* display: inline; */
+    float: right;
+    /* width: 700px; */
     margin: 0 auto;
+    /* border: 1px solid  yellow; */
 }
 header img{
-    padding:18px;
+    /* border: 1px solid blue; */
+    width: 70px;
+    /* padding:px; */
+}
+h1{
+    /* border: 1px solid red; */
+    font-size: 2em;
+    display: inline;
+    vertical-align: 60%;
+    margin-left: 1em;
 }
 nav ul{
-    float:right;
+    /* float:right; */
     list-style: none;
     text-align: center;
     display: inline;
     vertical-align: top;
+    border: 1px solid green;
 }
 nav li{
     list-style-type: none;
