@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Acme&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
 
-
 *{
     margin: 0px;
     padding: 0px;
@@ -21,25 +20,25 @@ header{
     background-color: #C69C72;
     font-family: 'Acme', sans-serif;
 }
-nav{
-    /* display: inline; */
-    float: right;
-    /* width: 700px; */
-    margin: 0 auto;
-    /* border: 1px solid  yellow; */
-}
 header img{
     border: 3px solid #593B21;
     border-radius: 4em;
     width: 65px;
     /* padding:px; */
 }
-h1{
+header h1{
     /* border: 1px solid red; */
     font-size: 2em;
     display: inline;
     vertical-align: 60%;
     margin-left: 0.5em;
+}
+nav{
+    /* display: inline; */
+    float: right;
+    /* width: 700px; */
+    margin: 0 auto;
+    /* border: 1px solid  yellow; */
 }
 nav ul{
     /* float:right; */
@@ -77,4 +76,9 @@ nav li a:hover{
 }
 main{
     font-family: 'Lato', sans-serif;
+}
+footer{
+    margin-top: 1em;
+    border-top: 4px solid #593B21;
+    background-color: #C69C72;
 }
