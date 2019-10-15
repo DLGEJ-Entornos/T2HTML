@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Acme&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+
+
 *{
     margin: 0px;
     padding: 0px;
@@ -13,8 +16,8 @@ header{
     width: 100%;
     height: 70px;  
     background-color: #F7F9FA;
-    border: 1px solid red;
-    margin-bottom: 20em;
+    border-bottom: 4px solid #593B21;
+    margin-bottom: 5em;
     background-color: #C69C72;
     font-family: 'Acme', sans-serif;
 }
@@ -26,8 +29,9 @@ nav{
     /* border: 1px solid  yellow; */
 }
 header img{
-    /* border: 1px solid blue; */
-    width: 70px;
+    border: 3px solid #593B21;
+    border-radius: 4em;
+    width: 65px;
     /* padding:px; */
 }
 h1{
@@ -35,7 +39,7 @@ h1{
     font-size: 2em;
     display: inline;
     vertical-align: 60%;
-    margin-left: 1em;
+    margin-left: 0.5em;
 }
 nav ul{
     /* float:right; */
@@ -43,14 +47,16 @@ nav ul{
     text-align: center;
     display: inline;
     vertical-align: top;
-    border: 1px solid green;
+    /* border: 1px solid green; */
 }
 nav li{
+    font-family: 'Lato', sans-serif;
     list-style-type: none;
     padding: 0px;
-    height: 24px;
+    font-size: 1.3em;
+    /* height: 24px;
     margin-top: 4px;
-    margin-bottom: 4px;
+    margin-bottom: 4px; */
     display: inline;
 }
 nav li a{
@@ -58,4 +64,17 @@ nav li a{
     text-decoration: none;
     line-height: 70px;
     padding: 15px 15px;
+    font-weight: 1000;
+    color: #593B21;
+}
+nav li a:hover{
+    font-size: 1em;
+    text-decoration: none;
+    line-height: 70px;
+    padding: 15px 15px;
+    font-weight: 5000;
+    color: #FCFC62;
+}
+main{
+    font-family: 'Lato', sans-serif;
 }
