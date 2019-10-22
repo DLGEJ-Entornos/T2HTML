@@ -8,6 +8,7 @@
 }
 body{
     background-color: #FEFFEA;
+    color: #593B21;
 }
 /* Header and Nav */
 header{
@@ -33,12 +34,16 @@ header h1{
     vertical-align: 60%;
     margin-left: 0.5em;
 }
+header h1:hover{
+
+    /* font-weight: 5000; */
+    text-shadow: 2px 2px 8px #FCFC62;
+    color: #FCFC62;
+}
 nav{
-    /* display: inline; */
     float: right;
-    /* width: 700px; */
-    margin: 0 auto;
-    /* border: 1px solid  yellow; */
+    margin: 0 auto; /*cambiar esto por
+    alineado vertHoriz que ella dijo*/
 }
 nav ul{
     /* float:right; */
@@ -73,12 +78,24 @@ nav li a:hover{
     padding: 15px 15px;
     font-weight: 5000;
     color: #FCFC62;
+    text-shadow: 2px 2px 8px #FCFC62;
 }
 main{
     font-family: 'Lato', sans-serif;
 }
+
 footer{
     margin-top: 1em;
     border-top: 4px solid #593B21;
     background-color: #C69C72;
+    text-align: center;
+}
+#socialIcons{
+    font-size: 1.5rem;
+    margin-left: 2em;
+    margin-right: 4em;
+}
+footer small,div,i{
+    display: inline;
+    vertical-align: middle;
 }
