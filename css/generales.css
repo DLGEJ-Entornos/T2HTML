@@ -91,12 +91,28 @@ footer{
     background-color: #C69C72;
     text-align: center;
 }
+footer small,footer div,footer i{
+    display: inline;
+    vertical-align: middle;
+}
 #socialIcons{
     font-size: 1.5rem;
     margin-left: 2em;
     margin-right: 4em;
 }
-footer small,footer div,footer i{
-    display: inline;
-    vertical-align: middle;
+#socialIcons i:hover{
+    /* font-size: 1.5rem;
+    margin-left: 2em;
+    margin-right: 4em; */
+    color: #FCFC62;
+    text-shadow: 2px 2px 8px #FCFC62;
+}
+footer div a{
+    color: #593B21;
+    font-weight: 800;
+}
+footer div a:hover{
+    color: #FCFC62;
+    text-shadow: 2px 2px 8px #FCFC62;
+    font-weight: 800;
 }
