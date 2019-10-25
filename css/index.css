@@ -1,0 +1,16 @@
+.parallax {
+  background-image: url("../img/coffeTexture.jpg");
+  height: 400px; 
+  /* width: 400px; */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* border: 1px solid red; */
+}
+.parallax img{
+  max-width: 500px;
+  width: 80%;
+  display: block;
+  margin: 0 auto;
+}
