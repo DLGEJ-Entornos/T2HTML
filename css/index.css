@@ -1,16 +1,26 @@
 .parallax {
   background-image: url("../img/coffeTexture.jpg");
-  height: 400px; 
+  height: 300px; 
   /* width: 400px; */
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  /* border: 1px solid red; */
+  border-bottom: 4px solid #593B21;
 }
 .parallax img{
   max-width: 500px;
   width: 80%;
   display: block;
   margin: 0 auto;
+}
+section{
+  text-align: center;
+}
+section article{
+  border: 3px solid #593B21;
+  padding: 1em;
+  margin: 1.5em;
+  border-radius: 0.5em;
+  background-color: #C69C72;
 }

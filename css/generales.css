@@ -1,14 +1,25 @@
 @import url('https://fonts.googleapis.com/css?family=Acme&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:600&display=swap');
 
 *{
     margin: 0px;
     padding: 0px;
     /* font-family: 'Acme', sans-serif; */
 }
+h2,h3{
+    font-family: 'Acme', sans-serif;
+}
+p{
+    font-family: 'Open Sans', sans-serif;
+}
 body{
-    background-color: #FEFFEA;
+    /* background-color: #FEFFEA; */
     color: #593B21;
+    background-size: 50%;
+    background-image: url(../img/texture-fondo1.jpg);
+    background-image: grayscale(60%);
+    background-repeat: repeat;
 }
 /* Header and Nav */
 header{
@@ -20,6 +31,7 @@ header{
     /* margin-bottom: 5em; */
     background-color: #C69C72;
     font-family: 'Acme', sans-serif;
+    
 }
 header img{
     border: 3px solid #593B21;
@@ -80,13 +92,33 @@ nav li a:hover{
     color: #FCFC62;
     text-shadow: 2px 2px 8px #FCFC62;
 }
+#principal{
+    border: 1px solid violet;
+    /* display: none; */
+    display: flex;
+}
 main{
     font-family: 'Lato', sans-serif;
-    border-top: 4px solid #593B21;
+    /* border-top: 4px solid #593B21; */
+    margin-top: 2em;
+    /* float:right; */
+    /* display: flex; */
+    float:right;
+    border: 1px solid orange;
+    /* padding: 0px; */
+}
+aside{
+    float:left;
+    width: 100px;
+    border: 1px solid green;
+    /* display: flex; */
 }
 
 footer{
+    height: 30px;
     margin-top: 1em;
+    padding-top: 1em;
+    padding-bottom:1em;
     border-top: 4px solid #593B21;
     background-color: #C69C72;
     text-align: center;
