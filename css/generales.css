@@ -17,7 +17,7 @@ body{
     /* background-color: #FEFFEA; */
     color: #593B21;
     background-size: 50%;
-    background-image: url(../img/texture-fondo1.jpg);
+    background-image: url(../img/texture-fondo1-sinColor.jpg);
     background-image: grayscale(60%);
     background-repeat: repeat;
 }
@@ -96,6 +96,7 @@ nav li a:hover{
     border: 1px solid violet;
     /* display: none; */
     display: flex;
+    
 }
 main{
     font-family: 'Lato', sans-serif;
