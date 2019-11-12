@@ -1,57 +1,60 @@
-@import url('https://fonts.googleapis.com/css?family=Acme&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:600&display=swap');
-
+@import url('https://fonts.googleapis.com/css?family=ZCOOL+QingKe+HuangYou&display=swap');
 *{
     margin: 0px;
     padding: 0px;
     /* font-family: 'Acme', sans-serif; */
 }
-h2,h3{
-    font-family: 'Acme', sans-serif;
+h2{
+    color: #26cd2c;
+    font-size: 2em;
+    font-family: 'ZCOOL QingKe HuangYou', cursive;
+}
+h3{
+    font-size: 1.5em;
+    font-family: 'Lato', sans-serif;
+    color:#673ab7;
 }
 p{
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Lato', sans-serif;
 }
 body{
-    /* background-color: #FEFFEA; */
-    color: #593B21;
+    background-color: #0b0617;
+    color: rgb(255, 255, 255);
     background-size: 50%;
-    background-image: url(../img/texture-fondo1-sinColor.jpg);
-    background-image: grayscale(60%);
-    background-repeat: repeat;
 }
 /* Header and Nav */
 header{
-    color: #593B21;
+    color: #26cd2c;
     width: 100%;
-    height: 70px;  
+    height: 100px;  
     background-color: #F7F9FA;
-    border-bottom: 4px solid #593B21;
+    border-bottom: 2px solid #26cd2c;
     /* margin-bottom: 5em; */
-    background-color: #C69C72;
-    font-family: 'Acme', sans-serif;
+    background-color: #241446;
+    font-family: 'ZCOOL QingKe HuangYou', cursive;
     
 }
 header object{
     /* display: none; */
     /* border: 3px solid #593B21;
     border-radius: 4em; */
-    width: 60px;
+    width: 80px;
     /* padding:px; */
 }
 header h1{
     /* border: 1px solid red; */
-    font-size: 2em;
+    font-size: 3em;
     display: inline;
-    vertical-align: 60%;
+    vertical-align: 15%;
     margin-left: 0.5em;
 }
 header h1:hover{
 
     /* font-weight: 5000; */
-    text-shadow: 2px 2px 8px #FCFC62;
-    color: #FCFC62;
+    text-shadow: 2px 2px 8px #ffd700;
+    color: #ffd700;
 }
 nav{
     float: right;
@@ -82,7 +85,7 @@ nav li a{
     line-height: 70px;
     padding: 15px 15px;
     font-weight: 1000;
-    color: #593B21;
+    color: #26cd2c;
 }
 nav li a:hover{
     font-size: 1em;
@@ -90,11 +93,11 @@ nav li a:hover{
     line-height: 70px;
     padding: 15px 15px;
     font-weight: 5000;
-    color: #FCFC62;
-    text-shadow: 2px 2px 8px #FCFC62;
+    color: #ffd700;
+    text-shadow: 2px 2px 8px #ffd700;
 }
 #principal{
-    border: 1px solid violet;
+    /* border: 1px solid violet; */
     /* display: none; */
     display: flex;
     
@@ -106,14 +109,18 @@ main{
     /* float:right; */
     /* display: flex; */
     float:right;
-    border: 1px solid orange;
+    /* border: 1px solid orange; */
     /* padding: 0px; */
 }
 aside{
     float:left;
     width: 100px;
-    border: 1px solid green;
+    /* border: 1px solid green; */
     /* display: flex; */
+}
+aside a{
+    color: white;
+    text-decoration: none;
 }
 
 footer{
@@ -121,13 +128,14 @@ footer{
     margin-top: 1em;
     padding-top: 1em;
     padding-bottom:1em;
-    border-top: 4px solid #593B21;
-    background-color: #C69C72;
+    border-top: 2px solid #26cd2c;
+    background-color: #241446;
     text-align: center;
 }
 footer small,footer div,footer i{
     display: inline;
     vertical-align: middle;
+    color: #26cd2c;
 }
 #socialIcons{
     font-size: 1.5rem;
@@ -138,18 +146,18 @@ footer small,footer div,footer i{
     /* font-size: 1.5rem;
     margin-left: 2em;
     margin-right: 4em; */
-    color: #FCFC62;
-    text-shadow: 2px 2px 8px #FCFC62;
+    color: #ffd700;
+    text-shadow: 2px 2px 8px #ffd700;
 }
 footer div a{
-    color: #593B21;
+    color: #26cd2c;
     font-weight: 800;
 }
 footer div a:hover{
-    color: #FCFC62;
-    text-shadow: 2px 2px 8px #FCFC62;
+    color: #ffd700;
+    text-shadow: 2px 2px 8px #ffd700;
     font-weight: 800;
 }
-div{
-    background-color: ;
-}
+/* div{
+    
+} */

@@ -6,7 +6,7 @@
   background-position: left;
   background-repeat: no-repeat;
   background-size:cover;
-  border-bottom: 4px solid #593B21;
+  border-bottom: 2px solid #26cd2c;
 }
 .parallax img{
   max-width: 500px;
@@ -18,9 +18,10 @@ section{
   text-align: center;
 }
 section article{
-  border: 3px solid #593B21;
+  /* border: 3px solid #593B21; */
   padding: 1em;
-  margin: 1.5em;
+  margin: 2.5em;
   border-radius: 0.5em;
-  background-color: #C69C72;
+  /* background-color: #241446; */
+  box-shadow: 1px 1px 15px #3f2773;
 }
