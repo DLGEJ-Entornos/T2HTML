@@ -33,10 +33,11 @@ header{
     font-family: 'Acme', sans-serif;
     
 }
-header img{
-    border: 3px solid #593B21;
-    border-radius: 4em;
-    width: 65px;
+header object{
+    /* display: none; */
+    /* border: 3px solid #593B21;
+    border-radius: 4em; */
+    width: 60px;
     /* padding:px; */
 }
 header h1{
@@ -148,4 +149,7 @@ footer div a:hover{
     color: #FCFC62;
     text-shadow: 2px 2px 8px #FCFC62;
     font-weight: 800;
+}
+div{
+    background-color: ;
 }
