@@ -7,15 +7,16 @@
     /* font-family: 'Acme', sans-serif; */
 }
 h2{
-    color: #26cd2c;
+    color: rgb(109, 68, 145);
+    text-shadow: 2px 2px 20px #3F2556;
     font-size: 2em;
     font-family: 'ZCOOL QingKe HuangYou', cursive;
 }
 h3{
     font-size: 1.5em;
     font-family: 'Lato', sans-serif;
-    color:rgb(255, 255, 255);
-    text-shadow: 2px 2px 20px rgb(255, 255, 255);
+    color:#95A3B3;
+    /* text-shadow: 2px 2px 20px rgb(255, 255, 255); */
     margin-bottom: 2em;
 }
 p{
@@ -23,19 +24,19 @@ p{
 }
 body{
     /* background-color: #0b0617; */
-    background-color: #100e17;
-    color: rgb(255, 255, 255);
+    background-color: #232528;
+    color: #95A3B3;
     background-size: 50%;
 }
 /* Header and Nav */
 header{
-    color: #26cd2c;
+    color: #4C2C69;
     width: 100%;
     height: 100px;  
     background-color: #F7F9FA;
-    border-bottom: 2px solid #26cd2c;
+    border-bottom: 2px solid rgb(109, 68, 145);
     /* margin-bottom: 5em; */
-    background-color: #100e17;
+    background-color: #232528;
     font-family: 'ZCOOL QingKe HuangYou', cursive;
     
 }
@@ -45,13 +46,13 @@ object{
     left: 50%;
     top:50%;
     width: 300px;
-    filter: drop-shadow( 3px 3px 8px #ffd700);
+    filter: drop-shadow( 3px 3px 8px #670086);
 
 }
 header h1{
     /* border: 1px solid red; */
     font-size: 3em;
-    color: #26cd2c;
+    color: rgb(109, 68, 145);
     display: inline;
     vertical-align: 15%;
     margin-left: 0.5em;
@@ -91,7 +92,7 @@ nav li a{
     line-height: 70px;
     padding: 15px 15px;
     font-weight: 1000;
-    color: #26cd2c;
+    color: rgb(109, 68, 145);
 }
 nav li a:hover{
     font-size: 1em;
@@ -134,14 +135,14 @@ footer{
     margin-top: 1em;
     padding-top: 1em;
     padding-bottom:1em;
-    border-top: 2px solid #26cd2c;
+    border-top: 2px solid rgb(109, 68, 145);
     background-color: #100e17;
     text-align: center;
 }
 footer small,footer div,footer i{
     display: inline;
     vertical-align: middle;
-    color: #26cd2c;
+    color: rgb(109, 68, 145);
 }
 #socialIcons{
     font-size: 1.5rem;
@@ -156,7 +157,7 @@ footer small,footer div,footer i{
     text-shadow: 2px 2px 8px #ffd700;
 }
 footer div a{
-    color: #26cd2c;
+    color: rgb(109, 68, 145);
     font-weight: 800;
 }
 footer div a:hover{
