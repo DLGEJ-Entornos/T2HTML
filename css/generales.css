@@ -6,11 +6,11 @@
 h2{
     color: rgb(109, 68, 145);
     text-shadow: 2px 2px 20px #3F2556;
-    font-size: 2em;
+    font-size: 1.8em;
     font-family: 'Press Start 2P', cursive;
 }
 h3{
-    font-size: 1.5em;
+    font-size: 1em;
     font-family: 'Press Start 2P', cursive;
     color:#95A3B3;
     /* text-shadow: 2px 2px 20px rgb(255, 255, 255); */
@@ -18,7 +18,7 @@ h3{
 }
 p{
     font-family: 'Open Sans', sans-serif;
-    font-size: 1.5em;
+    font-size: 1.2em;
 
 }
 body{
@@ -29,7 +29,7 @@ body{
 header{
     color: #4C2C69;
     width: 100%;
-    height: 100px;  
+    height: 90px;  
     border-bottom: 2px solid rgb(109, 68, 145);
     /* background-color: #232528; */
     background: rgb(35,37,40);
@@ -38,11 +38,11 @@ header{
 }
 header h1{
     /* border: 1px solid red; */
-    font-size: 3em;
+    font-size: 2.5em;
     color: rgb(109, 68, 145);
     display: inline;
     /* vertical-align: 15%; */
-    line-height: 1.7em;
+    line-height: 2.3em;
     margin-left: 0.5em;
 }
 header a{
@@ -111,6 +111,7 @@ main{
 }
 aside{
     float: right;
+    width: 150px;
     height: 400px;
     margin-top: 10em;
     margin-left: 1em;
