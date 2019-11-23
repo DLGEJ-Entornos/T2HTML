@@ -6,37 +6,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <!-- MetaEtiquetas -->
-            <!-- TWITTER CARDS -->
-        <meta name="twitter:card" content="summary_large_image">
-        <meta name="twitter:description" content="Si quieres conocer tips de Programación, coger ideas, conocer bien de forma amigable aquello que siempre usas pero no dominas y aprender nuevas tecnologias, este es tu sitio.">
-        <meta name="twitter:title" content="Tu lugar de referencia para aprender sobre Programación sin prisa.">
-        <meta name="twitter:site" content="@cafeProgramador">
-        <meta name="twitter:image" content="img/LOGOcafe.png">
-        <meta name="twitter:creator" content="@cafeProgramador">
-            <!-- OGG -->
-        <meta property="og:locale" content="es_ES">
-        <meta property="og:type" content="article">
-        <meta property="og:title" content="12 Leyes de la experiencia de usuario UX - Eniun">
-        <meta property="og:description" content="Las 12 leyes más importantes de la experiencia de usuario UX. Las reglas que nos sirven de guía para generar percepciones positivas en las personas cuando interactúen con nuestros productos. Eniun, expertos en experiencia de usuario y usabilidad web.">
-        <meta property="og:url" content="https://www.eniun.com/12-leyes-experiencia-de-usuario-ux/">
-        <meta property="og:site_name" content="Eniun">
-        <meta property="article:publisher" content="https://www.facebook.com/eniun.es">
-        <meta property="article:section" content="UX">
-        <meta property="article:published_time" content="2018-02-28T09:00:04+00:00">
-        <meta property="article:modified_time" content="2019-08-22T19:41:17+00:00">
-        <meta property="og:updated_time" content="2019-08-22T19:41:17+00:00">
-        <meta property="og:image" content="https://www.eniun.com/wp-content/uploads/12-leyes-de-la-experiencia-de-usuario-UX.jpg">
-        <meta property="og:image:secure_url" content="https://www.eniun.com/wp-content/uploads/12-leyes-de-la-experiencia-de-usuario-UX.jpg">
-        <meta property="og:image:width" content="1200">
-        <meta property="og:image:height" content="600">
-        <!--  -->
+    <!-- MetaEtiquetas -->
+    <!-- TWITTER CARDS -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:description"
+        content="Si quieres conocer tips de Programación, coger ideas, conocer bien de forma amigable aquello que siempre usas pero no dominas y aprender nuevas tecnologias, este es tu sitio.">
+    <meta name="twitter:title" content="Tu lugar de referencia para aprender sobre Programación sin prisa.">
+    <meta name="twitter:site" content="@cafeProgramador">
+    <meta name="twitter:image" content="img/LOGOcafe.png">
+    <meta name="twitter:creator" content="@cafeProgramador">
+    <!-- OGG -->
+    <meta property="og:locale" content="es_ES">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="12 Leyes de la experiencia de usuario UX - Eniun">
+    <meta property="og:description"
+        content="Las 12 leyes más importantes de la experiencia de usuario UX. Las reglas que nos sirven de guía para generar percepciones positivas en las personas cuando interactúen con nuestros productos. Eniun, expertos en experiencia de usuario y usabilidad web.">
+    <meta property="og:url" content="https://www.eniun.com/12-leyes-experiencia-de-usuario-ux/">
+    <meta property="og:site_name" content="Eniun">
+    <meta property="article:publisher" content="https://www.facebook.com/eniun.es">
+    <meta property="article:section" content="UX">
+    <meta property="article:published_time" content="2018-02-28T09:00:04+00:00">
+    <meta property="article:modified_time" content="2019-08-22T19:41:17+00:00">
+    <meta property="og:updated_time" content="2019-08-22T19:41:17+00:00">
+    <meta property="og:image"
+        content="https://www.eniun.com/wp-content/uploads/12-leyes-de-la-experiencia-de-usuario-UX.jpg">
+    <meta property="og:image:secure_url"
+        content="https://www.eniun.com/wp-content/uploads/12-leyes-de-la-experiencia-de-usuario-UX.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="600">
+    <!--  -->
     <meta name="description" content="Aprende de forma clara y amena Desarrollo Web, Programación, Administración de sistemas, curiosidades informáticas y conocimientos
     practicos y utiles del mundo de la informática. Tenemos soluciones para tus problemas comunes en el mundo del desarrollo, explicados de forma directa y efectiva,
     aprende increibles herramientas y tecnologías que te serán de gran utilidad.">
     <!-- IMPORTAR ICONOS DE FONTAWESOME -->
-    <script src="https://kit.fontawesome.com/yourcode.js"></script>
+    <script src="https://kit.fontawesome.com/333dc4d096.js"></script>
     <link rel="stylesheet" href="css/generales.css">
+    <link rel="stylesheet" href="css/contactos.css">
     <link rel="icon" href="img/LOGOcafe.png">
     <link href="img/LOGOcafe.png" rel="apple-touch-icon" />
 
@@ -45,8 +50,9 @@
 
 <body>
     <header>
-        <img width="150" src="img/LOGOcafe.png" alt="logoCafe">
-        <h1>El Circuito</h1>
+        <a href="index.html">
+            <h1>EL CIRCUITO</h1>
+        </a>
         <nav>
             <ul>
                 <li><a href="blog.html">Blog</a></li>
@@ -55,69 +61,81 @@
             </ul>
         </nav>
     </header>
-
     <br>
-    <main>
-        <form>
-            <fieldset>
-                <legend>DATOS PERSONALES</legend>
-                <div>
-                    <input required placeholder="Nombre" autofocus name='nombre' type='text' /><br>
-                    <input required placeholder="Apellidos" name='apellidos' type='text' /><br>
-                    <input required placeholder="Teléfono" name='tel' type='tel' /><br>
-                    <input required placeholder="Email" name='email' type='email' /><br><br>
-                    <input type="number" required placeholder="Edad" name="edad" min="18" max="99"><br><br>
-    
-                    <label>Sexo: </label> <br>
-                    <select name="select">
-                        <option value="value1">Hombre</option>
-                        <option value="value2" selected>Mujer</option>
-                    </select><br><br>
-    
-                </div>
-            </fieldset>
-    
-            <fieldset>
-                <legend>INDICA TU CONSULTA</legend>
-                <textarea required name="textarea" rows="10" cols="50">Escribe aquí tu mensaje</textarea><br>
-                <input checked type="checkbox" name="polYcookies" id="polCook">
-                ¿Aceptas la <a href="#">política de privacidad y cookies</a>?
-            </fieldset>
-            <br>
-            <div>
-                <input type="submit" value="Enviar" />
-                <input type="reset" value="Resetear"> <br>
-            </div>
-        </form><br>
-        <address>
-            <h3>Datos de Contacto</h3>
-            <p>Calle Lorem Ipsum 3 01001 Alicante</p>
-            <a href="mailto:cafeprogramador@cafepro.com">cafeprogramador@cafepro.com</a><br>
-            <a href="tel:+34911049620">911049620</a>
-        </address>
-    </main>
-    
-    <aside>
-        <h3>Archivos</h3>
-        <ul>
-            <li><a href="#">Entrada 1</a></li>
-            <li><a href="#">Entrada 2</a></li>
-        </ul>
-        <h3>Enlaces</h3>
-        <ul>
-            <li><a href="https://suckless.org/">Suckless.org</a></li>
-            <li><a href="https://lukesmith.xyz/">Luke Smith Webpage</a></li>
-            <li><a href="https://github.com/DLGEJ-Entornos/T2HTML.git">Repositorio de la web(GITHUB)</a></li>
-        </ul>
-    </aside>
+    <div id="principal">
+        <main>
+            <section>
+                <article>
+                    <form>
+                        <fieldset>
+                            <legend>DATOS PERSONALES</legend>
+                            <div>
+                                <input required placeholder="Nombre" autofocus name='nombre' type='text' /><br>
+                                <input required placeholder="Apellidos" name='apellidos' type='text' /><br>
+                                <input required placeholder="Teléfono" name='tel' type='tel' /><br>
+                                <input required placeholder="Email" name='email' type='email' /><br><br>
+                                <input type="number" required placeholder="Edad" name="edad" min="18" max="99"><br><br>
 
+                                <label>Sexo: </label> <br>
+                                <select name="select">
+                                    <option value="value1">Hombre</option>
+                                    <option value="value2" selected>Mujer</option>
+                                </select><br><br>
+
+                            </div>
+                        </fieldset>
+
+                        <fieldset>
+                            <legend>INDICA TU CONSULTA</legend>
+                            <textarea required name="textarea" rows="10"
+                                cols="50">Escribe aquí tu mensaje</textarea><br>
+                            <input checked type="checkbox" name="polYcookies" id="polCook">
+                            ¿Aceptas la <a href="#">política de privacidad y cookies</a>?
+                        </fieldset>
+                        <br>
+                        <div>
+                            <input type="submit" value="Enviar" />
+                            <input type="reset" value="Resetear"> <br>
+                        </div>
+                    </form><br>
+                </article>
+            </section>
+            <section>
+                <article>
+                    <address>
+                        <h3>Datos de Contacto</h3>
+                        <p>Calle Lorem Ipsum 3 01001 Alicante</p>
+                        <a href="mailto:cafeprogramador@cafepro.com">cafeprogramador@cafepro.com</a><br>
+                        <a href="tel:+34911049620">911049620</a>
+                    </address>
+                </article>
+            </section>
+        </main>
+
+        <aside>
+            <h3>Archivos</h3>
+            <ul>
+                <li><a href="#">Entrada 1</a></li>
+                <li><a href="#">Entrada 2</a></li>
+            </ul>
+            <h3>Enlaces</h3>
+            <ul>
+                <li><a href="https://suckless.org/">Suckless.org</a></li>
+                <li><a href="https://lukesmith.xyz/">Luke Smith Webpage</a></li>
+                <li><a href="https://github.com/DLGEJ-Entornos/T2HTML.git">Repositorio de la web(GITHUB)</a></li>
+            </ul>
+        </aside>
+    </div>
     <footer>
-        <small>© El Circuito 2019</small>
-        <div><a href="#">Política de privacidad y cookies</a></div>
-        <!-- <a href="https://www.twitter.com"><img width="30" src="img/TWIT-ICON.ico" alt="TwiiterICON"></a>
-        <a href="https://www.facebook.com"><img width="30" src="img/FB-ICON.png" alt="FacebookICON"></a>
-        <a href="https://www.whatsapp.com"><img width="30" src="img/WHATS-ICON.png" alt="WhatsappICON"></a> -->
-    </footer>
+            <div><a href="#">Política de privacidad y cookies</a></div>
+            
+            <div id="socialIcons">
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-facebook"></i>
+                <i class="fab fa-whatsapp"></i>
+            </div>
+            <small>© EL CIRCUITO 2019</small>
+        </footer>
 </body>
 
 </html>
