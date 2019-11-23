@@ -54,8 +54,8 @@ aside a{
 }
 header h1:hover, aside a:hover{
     /* font-weight: 5000; */
-    text-shadow: 2px 2px 8px #ffd700;
-    color: #ffd700;
+    text-shadow: 2px 2px 8px #95A3B3;
+    color: #95A3B3;
 }
 nav{
     float: right;
@@ -93,8 +93,8 @@ nav li a:hover{
     text-decoration: none;
     padding: 15px 15px;
     font-weight: 5000;
-    color: #ffd700;
-    text-shadow: 2px 2px 8px #ffd700;
+    color: #95A3B3;
+    text-shadow: 2px 2px 8px #95A3B3;
 }
 #principal{
     /* border: 1px solid violet; */
@@ -137,6 +137,7 @@ list-style: none;
 }
 footer{
     height: 50px;
+    max-height: 50px;
     margin-top: 1em;
     font-family: 'Open Sans', sans-serif;
     padding-top: 1em;
@@ -162,8 +163,8 @@ footer small,footer div,footer i{
     /* font-size: 1.5rem;
     margin-left: 2em;
     margin-right: 4em; */
-    color: #ffd700;
-    text-shadow: 2px 2px 8px #ffd700;
+    color: #95A3B3;
+    text-shadow: 2px 2px 8px #95A3B3;
 }
 footer div a{
     color: rgb(109, 68, 145);
@@ -171,8 +172,8 @@ footer div a{
     /* font-size: 1.5em; */
 }
 footer div a:hover{
-    color: #ffd700;
-    text-shadow: 2px 2px 8px #ffd700;
+    color: #95A3B3;
+    text-shadow: 2px 2px 8px #95A3B3;
 }
 /* div{
     
