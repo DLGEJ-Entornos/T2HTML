@@ -1,0 +1,12 @@
+
+    /*MEDIA QUERIES*/
+/*TABLET*/
+@media (max-width: 1048px) {
+    header nav, header a{
+    display: none;
+  }
+  header nav a,header nav object{ /*PORQUE NO SE RENDERIZA?*/
+    display: inline;
+  }
+}
+/*MOVIL*/
