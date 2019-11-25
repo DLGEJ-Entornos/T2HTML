@@ -96,6 +96,12 @@ nav li a:hover{
     color: #95A3B3;
     text-shadow: 2px 2px 8px #95A3B3;
 }
+/* nav i{           MEDIA QUERY
+    display: none;
+} */
+header object{
+    display: none;
+}
 #principal{
     /* border: 1px solid violet; */
     display: flex;
@@ -197,5 +203,17 @@ a:link{
     color: rgb(109, 68, 145);
 }
 a:active{
-    /* color: red; */
+    /* color: red;   NO FUNC*/
 }
+
+    /*MEDIA QUERIES*/
+/*TABLET*/
+@media (max-width: 1048px) {
+    header nav, header a{
+    display: none;
+  }
+  header nav a,header nav object{ /*PORQUE NO SE RENDERIZA?*/
+    display: inline;
+  }
+}
+/*MOVIL*/
