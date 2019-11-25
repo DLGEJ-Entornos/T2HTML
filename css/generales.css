@@ -13,7 +13,6 @@ h3,legend,#lblSexo{
     font-size: 1em;
     font-family: 'Press Start 2P', cursive;
     color:#95A3B3;
-    /* text-shadow: 2px 2px 20px rgb(255, 255, 255); */
     margin-bottom: 2em;
 }
 p,aside a{
@@ -31,17 +30,14 @@ header{
     width: 100%;
     height: 90px;  
     border-bottom: 2px solid rgb(109, 68, 145);
-    /* background-color: #232528; */
     background: rgb(35,37,40);
     background: linear-gradient(to bottom, rgba(35,37,40,1) 80%, rgba(76,44,105,1) 100%);
     font-family: 'Press Start 2P', cursive;
 }
 header h1{
-    /* border: 1px solid red; */
     font-size: 2.5em;
     color: rgb(109, 68, 145);
     display: inline;
-    /* vertical-align: 15%; */
     line-height: 2.3em;
     margin-left: 0.5em;
 }
@@ -53,7 +49,6 @@ aside a{
     color: rgb(109, 68, 145);
 }
 header h1:hover, aside a:hover{
-    /* font-weight: 5000; */
     text-shadow: 2px 2px 8px #95A3B3;
     color: #95A3B3;
 }
@@ -63,21 +58,16 @@ nav{
     alineado vertHoriz que ella dijo*/
 }
 nav ul{
-    /* float:right; */
     list-style: none;
     text-align: center;
     display: inline;
     vertical-align: top;
-    /* border: 1px solid green; */
 }
 nav li{
     font-family: 'Press Start 2P', sans-serif;
     list-style-type: none;
     padding: 0px;
     font-size: 1.3em;
-    /* height: 24px;
-    margin-top: 4px;
-    margin-bottom: 4px; */
     display: inline;
 }
 nav li a{
@@ -96,39 +86,30 @@ nav li a:hover{
     color: #95A3B3;
     text-shadow: 2px 2px 8px #95A3B3;
 }
-/* nav i{           MEDIA QUERY
-    display: none;
+/*#burguerM{           MEDIA QUERY
+    display: none; 
 } */
 header object{
     display: none;
 }
 #principal{
-    /* border: 1px solid violet; */
     display: flex;
     background: linear-gradient(to top, rgba(35,37,40,1) 98.5%, rgba(76,44,105,1) 100%);
     padding-top:2em;
 }
 main{
-    /* font-family: 'Lato', sans-serif; */
     width: 85%;
     margin-top: 2em;
-    /* float:right; */
-    /* display: flex; */
     float:left;
-    /* border: 1px solid orange; */
-    /* padding: 0px; */
 }
 section{
     text-align: center;
   }
 section article{
-    /* border: 3px solid #593B21; */
     padding: 1em;
     margin: 2.5em;
-    /* border: 1px solid rgba(128, 128, 128, 0.137); */
     border: 1px solid rgb(41, 46, 51);
     border-radius: 0.5em;
-    /* background-color: #241446; */
     box-shadow: 0px 4px 80px black;
   }
 
@@ -139,14 +120,9 @@ aside{
     margin-top: 10em;
     margin-left: 1em;
     padding: 1em;
-  /* border: 1px solid rgba(128, 128, 128, 0.137); */
   border: 1px solid rgb(41, 46, 51);
   border-radius: 0.5em;
-  /* background-color: #241446; */
   box-shadow: 0px 4px 80px black;
-    /* width: 50px; */
-    /* border: 1px solid green; */
-    /* display: flex; */
 }
 aside h3{ /*APLICAR ESTO SOLO A LOS H3 > 1*/
     margin-top: 1em; 
@@ -163,33 +139,26 @@ footer{
     padding-top: 1em;
     padding-bottom:1em;
     border-top: 2px solid rgb(109, 68, 145);
-    /* background-color: #232528; */
     background: linear-gradient(to top, rgba(35,37,40,1) 80%, rgba(76,44,105,1) 100%);
     text-align: center;
 }
 footer small,footer div,footer i{
     display: inline;
-    /* vertical-align: middle; */
     line-height: 3em;
     color: rgb(109, 68, 145);
     font-size: 1.2em;
 }
 #socialIcons{
-    /* font-size: 2rem; */
     margin-left: 2em;
     margin-right: 4em;
 }
 #socialIcons i:hover{
-    /* font-size: 1.5rem;
-    margin-left: 2em;
-    margin-right: 4em; */
     color: #95A3B3;
     text-shadow: 2px 2px 8px #95A3B3;
 }
 footer div a{
     color: rgb(109, 68, 145);
     font-weight: 800;
-    /* font-size: 1.5em; */
 }
 footer div a:hover{
     color: #95A3B3;
