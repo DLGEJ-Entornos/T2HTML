@@ -9,7 +9,7 @@ h2{
     font-size: 1.8em;
     font-family: 'Press Start 2P', cursive;
 }
-h3{
+h3,legend,#lblSexo{
     font-size: 1em;
     font-family: 'Press Start 2P', cursive;
     color:#95A3B3;

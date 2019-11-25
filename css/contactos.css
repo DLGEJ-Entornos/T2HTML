@@ -22,3 +22,78 @@ section{
 aside{
     margin-top:30px;
 }
+fieldset{
+  border: 1px none #95A3B3;
+}
+legend{
+  padding: 1em;
+}
+input,select{
+  font-size: 1.5em;
+  text-align: center;
+  border-radius: 0.5em;
+  border: none;
+  background-color: rgb(41, 46, 51);
+  color: #95A3B3;
+  margin:0.3em ;
+}
+textarea{
+  width: 700px;
+  height: 330px;
+  border: 1px none #95A3B3;
+  border-radius: 0.5em;
+  background-color: rgb(41, 46, 51);
+  resize: none;
+  font-size: 1.2em;
+  color: #95A3B3;
+  padding: 1em;
+  font-family: 'Open Sans', sans-serif;
+}
+textarea:focus,input:focus{ 
+  outline: none !important;
+  border-color: black;
+  box-shadow: 0px 3px 10px black;
+}
+textarea::-webkit-scrollbar {
+  width: 12px;
+  background-color: rgb(41, 46, 51); 
+}
+
+textarea::-webkit-scrollbar-thumb {
+  border-radius: 2px;
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+  background-color: #95A3B3; 
+}
+
+select{
+  width: 150px;
+  text-align: center;
+  color: #95A3B3;
+  outline: none;
+}
+#buttons > *{
+  color: #95A3B3;
+  font-size: 1.7em;
+  border: 1px solid #95A3B3;
+  padding: 0.7em;
+  border-radius: 4px;
+}
+select, input[type="reset"]{
+  font-size:1.2em !important;
+  padding: 0.2em;
+}
+input[type="submit"]{font-size: 1.8em;}
+input[type="submit"]:hover{
+  color: rgb(109, 68, 145) !important;
+  border: 1px solid rgb(109, 68, 145) !important;
+}
+input[type="reset"]:hover{
+  color:  tomato !important;
+  border: 1px solid tomato !important;
+}
+polCook{color: salmon;}
+#cook2,a{
+  font-size: 1.5em;
+  color:#95A3B3;
+}
+ a:hover{color: rgb(109, 68, 145);}

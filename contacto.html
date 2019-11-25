@@ -69,6 +69,7 @@
                     <form>
                         <fieldset>
                             <legend>DATOS PERSONALES</legend>
+                            <!-- <h3>DATOS PERSONALES</h3> -->
                             <div>
                                 <input required placeholder="Nombre" autofocus name='nombre' type='text' /><br>
                                 <input required placeholder="Apellidos" name='apellidos' type='text' /><br>
@@ -76,7 +77,7 @@
                                 <input required placeholder="Email" name='email' type='email' /><br><br>
                                 <input type="number" required placeholder="Edad" name="edad" min="18" max="99"><br><br>
 
-                                <label>Sexo: </label> <br>
+                                <label id="lblSexo">Sexo: </label> <br>
                                 <select name="select">
                                     <option value="value1">Hombre</option>
                                     <option value="value2" selected>Mujer</option>
@@ -84,16 +85,16 @@
 
                             </div>
                         </fieldset>
-
+                        <br>
                         <fieldset>
                             <legend>INDICA TU CONSULTA</legend>
-                            <textarea required name="textarea" rows="10"
-                                cols="50">Escribe aquí tu mensaje</textarea><br>
+                            <textarea  placeholder="Escribe aquí tu mensaje." required name="textarea" rows="10"
+                                cols="50"></textarea><br>
                             <input checked type="checkbox" name="polYcookies" id="polCook">
-                            ¿Aceptas la <a href="#">política de privacidad y cookies</a>?
+                            <span id="cook2">¿Aceptas la</span> <a href="#">política de privacidad y cookies</a>?
                         </fieldset>
                         <br>
-                        <div>
+                        <div id="buttons">
                             <input type="submit" value="Enviar" />
                             <input type="reset" value="Resetear"> <br>
                         </div>
@@ -104,8 +105,8 @@
                 <article>
                     <address>
                         <h3>Datos de Contacto</h3>
-                        <p>Calle Lorem Ipsum 3 01001 Alicante</p>
-                        <a href="mailto:cafeprogramador@cafepro.com">cafeprogramador@cafepro.com</a><br>
+                        <p>Calle Lorem Ipsum 3 01001 Alicante</p> <!--ancla a ubica empresa (blog)-->
+                        <a href="mailto:cafeprogramador@cafepro.com">circuitoteam@elcircuito.com</a><br>
                         <a href="tel:+34911049620">911049620</a>
                     </address>
                 </article>
