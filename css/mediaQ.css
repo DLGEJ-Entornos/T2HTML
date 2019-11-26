@@ -1,12 +1,42 @@
 
     /*MEDIA QUERIES*/
-/*TABLET*/
-@media (max-width: 1048px) {
-    header nav, header a{
+
+/*ESCRITORIO (sobrescrib. otras hojas)*/    
+@media (max-width: 5000px) {
+  header nav span,#logoMediaQ {
     display: none;
   }
-  header nav a,header nav object{ /*PORQUE NO SE RENDERIZA?*/
+  header nav ul, header a{
     display: inline;
   }
 }
+/*TABLET*/
+@media (max-width: 1048px) {
+  header nav span,#logoMediaQ{
+    display: inline-block;
+  }
+  header nav ul, header a,
+  .parallax object
+  {
+    display: none;
+  }
+}
+
+#logoMediaQ object{
+  width: 60px;
+  box-shadow: 1px 2px 10px rgb(109, 68, 145);
+  border-radius: 0.5em;
+  /* border:1px solid red; */
+  position: relative;
+  left: 50px;
+  top: 40px;
+}
+header nav span{
+  font-size: 60px;
+  /* border: 1px solid red; */
+  margin-right: 0.3em;
+  margin-top:0.1em;
+  color:#95A3B3;
+}
+
 /*MOVIL*/

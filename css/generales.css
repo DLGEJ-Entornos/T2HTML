@@ -89,9 +89,9 @@ nav li a:hover{
 /*#burguerM{           MEDIA QUERY
     display: none; 
 } */
-header object{
+/* header object{
     display: none;
-}
+} */
 #principal{
     display: flex;
     background: linear-gradient(to top, rgba(35,37,40,1) 98.5%, rgba(76,44,105,1) 100%);
@@ -108,6 +108,9 @@ section{
 section article{
     padding: 1em;
     margin: 2.5em;
+}
+article img, article, article iframe{
+    margin-top:1em;
     border: 1px solid rgb(41, 46, 51);
     border-radius: 0.5em;
     box-shadow: 0px 4px 80px black;
