@@ -30,7 +30,7 @@ input,select{
   -moz-appearance: none;
 }
 textarea{
-  width: 700px;
+  width: 80%;
   height: 330px;
   border: 1px none #95A3B3;
   border-radius: 0.5em;
@@ -91,9 +91,9 @@ input[type="number"]{
   -moz-appearance:textfield;  
   -webkit-appearance:textfield;  
 }
-polCook{
+/* polCook{
   color: salmon;
-}
+} */
 #cook2,fieldset a{
   font-size: 1.5em;
   color:#95A3B3;
