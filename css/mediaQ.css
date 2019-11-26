@@ -3,7 +3,7 @@
 
 /*ESCRITORIO (sobrescrib. otras hojas)*/    
 @media (max-width: 5000px) {
-  header nav span,#logoMediaQ,#asideMQuery {
+  #burguerM,#logoMediaQ,#asideMQuery {
     display: none;
   }
   header nav ul, header a{
@@ -12,7 +12,7 @@
 }
 /*TABLET*/
 @media (max-width: 1048px) {
-  header nav span,#logoMediaQ{
+  #burguerM,#logoMediaQ{
     display: inline-block;
   }
   header nav ul, header a,
@@ -22,7 +22,11 @@
   }
 }
 #logoMediaQ{
-  border: 1px solid orange;
+  /* border: 1px solid orange; */
+  position: relative;
+  left: 10px;
+  top: 10px; 
+  z-index: 1;
 }
 #logoMediaQ object{
   width: 60px;
@@ -30,15 +34,26 @@
   border-radius: 0.5em;
   /* border:1px solid red; */
   position: relative;
-  left: 50px;
-  top: 40px;
+  /* left: 50px; */
+  top: 30px;
+  pointer-events: none;
 }
-header nav span{
+#burguerM{
   font-size: 60px;
   /* border: 1px solid red; */
   margin-right: 0.3em;
   margin-top:0.1em;
   color:#95A3B3;
+}
+
+/* #burguerM:hover{
+  
+} */
+
+@media (max-width: 900px) {
+  /* iframe{
+    border: 1px solid green !important;
+  } */
 }
 
 /*MOVIL*/
