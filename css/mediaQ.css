@@ -121,11 +121,21 @@
     height: 20px;
 }
 
+/*fieldset{  FLEXBOX 
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: stretch;
+}*/
+table{
+  font-size: 0.8em;
+}
+
 fieldset div{
   font-size: 0.8em !important;
 }
 fieldset input{
-  width: 30px !important;
+  width: 90% !important;
 }
 
 }

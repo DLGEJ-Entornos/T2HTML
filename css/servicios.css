@@ -23,7 +23,7 @@ section{
       width: 100%;
       border-collapse: collapse;
   }
-  table th{
+  table tr:first-child{
       background-color:#95A3B3;
       color:#191b1d;
   }
