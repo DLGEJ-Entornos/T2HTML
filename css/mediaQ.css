@@ -6,7 +6,7 @@
   #burguerM,#logoMediaQ,#asideMQuery {
     display: none;
   }
-  header nav ul, #h1{
+  #listaLinks, #h1{
     display: inline;
   }
 }
@@ -15,16 +15,20 @@
   #burguerM,#logoMediaQ{
     display: inline-block;
   }
-  header nav ul{
+  #listaLinks{
     border: 1px solid rgb(34, 223, 236);  
     position: relative;
     top: 20px;
+    transition: all 0.5s ease-in-out;
+    width: 150px;
+    height: 194px;
+    opacity:0;
   }
-  header nav ul > *{
+  #listaLinks > *{
     border:1px solid blue;
     font-size: 0.7em;
   }
-  header nav ul li a{
+  #listaLinks li a{
     margin: 0px;
     padding: 0px;
   }
@@ -34,17 +38,23 @@
     display: none;
   }
 
-
 }
 #check{
   width: 4em;
   height: 4em;
-  border:1px solid gold !important;
+  display:none;
+  cursor: pointer;
 }
-
+#check:checked ~ #listalinks{
+  background: #505050;
+  transition-delay: 0s;
+  transition-duration: 0s;
+  transition:0s;
+  opacity:1;
+  transform: translatex(-10px);
+}
 #burguerM{
   font-size: 60px;
-  /* border: 1px solid red; */
   margin-right: 0.3em;
   margin-top:0.1em;
   color:#95A3B3;
