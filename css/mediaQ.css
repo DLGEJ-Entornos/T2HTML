@@ -31,14 +31,14 @@
     padding: 0px;
     font-size: 0.8em;
   }
-  /* header nav ul li a:hover{
+  header nav ul li a:hover{
     text-decoration: none;
     line-height: 4em;
     font-size: 0.8em;
-    padding: 15px 15px;
+    padding: 0px;
     font-weight: 1000;
     color: #95A3B3;
-  } */
+  }
 
 }
 
@@ -119,5 +119,9 @@
     font-size: 1.3em;
     display: inline-block;
     height: 20px;
+}
+
+fieldset div{
+  font-size: 0.8em;
 }
 }
