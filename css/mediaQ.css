@@ -124,4 +124,8 @@
 fieldset div{
   font-size: 0.8em !important;
 }
+fieldset input{
+  width: 30px !important;
+}
+
 }
