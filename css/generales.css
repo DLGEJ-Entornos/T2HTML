@@ -185,9 +185,14 @@ footer > *{
 }
 #icoWhats{
     width:50px;
-    height: 100%;
-    float: right !important;
+    height: 50px;
+    /* float: right !important; */
     padding: 0%;
+    position: fixed;
+    right: 20px;
+    bottom: 85px;
+    animation: breathing 5s ease-out infinite normal;
+    /* -moz-animation: breathing 7s ease-out infinite normal; */
 }
 #icoWhats i{
     font-size: 3em;
@@ -195,3 +200,28 @@ footer > *{
 #icoWhats i:hover{
     color: lawngreen;
 }
+@keyframes breathing {
+    0% {
+      -webkit-transform: scale(0.7);
+      -ms-transform: scale(0.7);
+      transform: scale(0.7);
+    }
+  
+    25% {
+      -webkit-transform: scale(1);
+      -ms-transform: scale(1);
+      transform: scale(1);
+    }
+  
+    60% {
+      -webkit-transform: scale(0.7);
+      -ms-transform: scale(0.7);
+      transform: scale(0.7);
+    }
+  
+    100% {
+      -webkit-transform: scale(0.7);
+      -ms-transform: scale(0.7);
+      transform: scale(0.7);
+    }
+  }
