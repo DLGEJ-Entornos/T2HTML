@@ -22,7 +22,6 @@
   }
   header nav ul{
     display: inline;
-    border:1px solid green;
     position: relative;
     top: 10px;
 
@@ -87,7 +86,6 @@
 
   header nav ul{
     display: inline-grid;
-    border:1px solid green;
     position: relative;
     top: 15px;
     right: 80px;
@@ -130,9 +128,9 @@
 table{
   font-size: 0.8em;
 }
-
 fieldset div{
   font-size: 0.8em !important;
+  overflow: hidden;
 }
 fieldset input{
   width: 90% !important;
