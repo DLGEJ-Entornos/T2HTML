@@ -189,7 +189,7 @@ footer > *{
     /* float: right !important; */
     padding: 0%;
     position: fixed;
-    right: 20px;
+    right: -5px;
     bottom: 85px;
     animation: breathing 5s ease-out infinite normal;
     /* -moz-animation: breathing 7s ease-out infinite normal; */
