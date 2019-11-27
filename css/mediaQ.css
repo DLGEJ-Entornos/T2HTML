@@ -6,7 +6,7 @@
   #burguerM,#logoMediaQ,#asideMQuery {
     display: none;
   }
-  header nav ul, header a{
+  header nav ul, #h1{
     display: inline;
   }
 }
@@ -15,11 +15,39 @@
   #burguerM,#logoMediaQ{
     display: inline-block;
   }
-  header nav ul, header a,
-  .parallax object,#asideMQuery
+  header nav ul{
+    border: 1px solid rgb(34, 223, 236);  
+    position: relative;
+    top: 20px;
+  }
+  header nav ul > *{
+    border:1px solid blue;
+    font-size: 0.7em;
+  }
+  header nav ul li a{
+    margin: 0px;
+    padding: 0px;
+  }
+  .parallax object,#asideMQuery,
+  #h1
   {
     display: none;
   }
+
+
+}
+#check{
+  width: 4em;
+  height: 4em;
+  border:1px solid gold !important;
+}
+
+#burguerM{
+  font-size: 60px;
+  /* border: 1px solid red; */
+  margin-right: 0.3em;
+  margin-top:0.1em;
+  color:#95A3B3;
 }
 #logoMediaQ{
   /* border: 1px solid orange; */
@@ -38,20 +66,13 @@
   top: 30px;
   pointer-events: none;
 }
-#burguerM{
-  font-size: 60px;
-  /* border: 1px solid red; */
-  margin-right: 0.3em;
-  margin-top:0.1em;
-  color:#95A3B3;
-}
-
 /* #burguerM:hover{
   
 } */
 
-/*MOVIL*/
+/*MOVIL*/ 
 @media (max-width: 694px){
+  /*AÑADE para li's*/
 
   aside{
     display: none;
