@@ -1,0 +1,6 @@
+header,header>*,.parallax,.parallax>*,#asideMQuery,
+#asideMQuery>*,aside,aside>*,
+footer,footer>*
+{
+    display: none;
+}
