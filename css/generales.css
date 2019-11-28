@@ -9,9 +9,14 @@ a:visited{
 a:link{
     color: rgb(109, 68, 145);
 }
-/*a:active{
-    color: red;   NO FUNC
-}*/
+
+
+img:not([alt]){
+    border: 3px solid red;
+}
+a[href$=".pdf"]::after {
+    content: url("https://www.shareicon.net/data/16x16/2016/08/13/808584_document_512x512.png");
+}
 
 h2{
     color: rgb(109, 68, 145);
@@ -98,12 +103,7 @@ nav li a:hover{
     color: #95A3B3;
     text-shadow: 2px 2px 8px #95A3B3;
 }
-/*#burguerM{           MEDIA QUERY
-    display: none; 
-} */
-/* header object{
-    display: none;
-} */
+
 #principal{
     display: flex;
     background: linear-gradient(to top, rgba(35,37,40,1) 98.5%, rgba(76,44,105,1) 100%);
@@ -133,6 +133,42 @@ article img{
 }
 article img:hover{
     width: 90%;
+}
+#contenFlexB{
+    display: flexbox;
+    flex-flow: wrap;
+    border-radius: 0.5em;
+    border:3px solid rgb(109, 68, 145);
+    z-index: 2;
+}
+#contenFlexB > *{
+    /* margin: 0.2em; */
+    padding: 0.5em;
+}
+#contenFlexB > *:hover{
+    /* border-radius: 0.5em;
+    border: 1px solid rgb(109, 68, 145); */
+    /* color: #95A3B3; */
+    box-shadow: 2px 4px 20px rgb(109, 68, 145);
+}
+#contenFlexB > *::first-letter{
+    font-size: 2em;
+}
+#flex1{
+    color: white;
+    background-color: purple;
+}
+#flex2{
+    color: black;
+    background-color: violet;
+}
+#flex3{
+    color: black;
+    background-color: grey;
+}
+#flex4{
+    color: white;
+    background-color: rgb(116, 40, 116);
 }
 aside{
     float: right;
