@@ -121,7 +121,9 @@ section article{
     padding: 1em;
     margin: 2.5em;
 }
-article img, article, article iframe{
+article img, article,
+ article iframe, article video
+ {
     margin-top:1em;
     border: 1px solid rgb(41, 46, 51);
     border-radius: 0.5em;
