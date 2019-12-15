@@ -158,6 +158,13 @@
                   </canvas> 
                 </article>
 
+                <article>
+                  <h3>Juego Canvas - DangerLab</h3>
+                  <canvas onmouseover="bloqFlechasWin()" id="juego" width="500" height="500"> 
+                       El navegador no soporta canvas 
+                  </canvas> 
+                </article>
+
                 <article id="asideMQuery">
                         <h3>Recientes</h3>
                         <ul>
@@ -367,10 +374,92 @@ function iniciarCnv() {
   }
   
 };
+//JUEGO 'DANGERLAB' CON CANVAS
+var lienzo=null, canvas=null;
+var x=250,y=250; //inicio jugador(coords)
+var lastPress=null; //Variable para guardar la tecla presionada
+const KEY_LEFT=37;
+const KEY_UP=38;
+const KEY_RIGHT=39;
+const KEY_DOWN=40;
+
+//MAPEADO
+const chunkLong = 100;
+const pjLong = 10;
+
+
+function iniciarCnvJuego() {
+    canvas=document.getElementById('juego');
+    lienzo=canvas.getContext('2d'); //obtenemos el contexto de dibujo
+    run();
+}
+
+function run(){
+    //requestAnimationFrame(): informa al navegador de que quieres realizar una animación y solicita que el navegador programe el repintado de la ventana para el próximo ciclo de animación.
+    requestAnimationFrame(run); //animación optimizada
+    pintarLienzo(lienzo);
+    //activarBomba(); 
+    accionesJuego();
+    //resultados();
+}
+function accionesJuego(){
+    //Modificamos la dirección que tendrá nuestro player en función de la tecla presionada   
+        switch (lastPress) {
+          case KEY_RIGHT:
+            x+=5; 
+            break;
+          case KEY_LEFT:
+            x-=5; 
+            break;
+          case KEY_UP:
+            y-=5; 
+            break;
+          case KEY_DOWN:
+            y+=5; 
+            break;
+          default:
+           console.log("tecla no mapeada"); 
+        }
+  
+    //verificaremos si el player ha salido del canvas, en cuyo caso, haremos que aparezca por el otro lado:
+    if(x >= canvas.width){
+        x = canvas.width-10;
+        lastPress = null;
+    }else if(x <= 0){
+        x=0;
+        lastPress = null;
+    }else if(y >= canvas.height){
+        y=canvas.height-10;
+        lastPress = null;
+    }else if(y <= 0){
+        y=0;
+        lastPress = null;
+    }
+}
+function pintarLienzo(lienzo){
+    lienzo.fillStyle="#211A38"; //le ponemos un color al lienzo
+    lienzo.fillRect(0,0,canvas.width,canvas.height); //Dibujamos el lienzo
+    //zonas 
+    lienzo.fillStyle='grey';
+    lienzo.fillRect(0,0,chunkLong,chunkLong);
+    //pj
+    lienzo.fillStyle='#0f0';
+    lienzo.fillRect(x,y,pjLong,pjLong); //Dibujamos el jugador: va por posición x,y y es de 10x10 
+}
+//FIN JUEGO
+
+document.addEventListener('keydown', function(evt) { 
+    //Creamos un manejador de evento para el teclado que se encargue de almacenar la tecla presionada. El evento que nos interesa en este caso es keydown
+    lastPress=evt.keyCode;
+}, false);
+
+
+
+
+function bloqFlechasWin() {
+ console.log("bloqueamos flechas para evitar movimiento en window del navegador"); 
+}
 window.addEventListener("load", iniciarCnv, false);
-
-
-
-
+window.addEventListener("load", iniciarCnvJuego, false);
 </script>
 </html>
