@@ -115,7 +115,7 @@
                 </article>
                 <article>
                     <h3  id="ent4">Control de Vídeo</h3>
-                        <video id="medio" autoplay controls loop>
+                        <video id="medio">
                             <source src="http://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4" type="video/mp4">
                         </video>
                         <div id="controles">
@@ -127,6 +127,27 @@
                         		<input type="button" id="silenciar" value="&#128266;">
                         		<!--label>Volumen</label-->
                         		<input type="button" id="masVolumen" value="+">
+                        </div>
+                </article>
+                <article>
+                    <h3  id="AudControl">Control de Audio</h3>
+                        <audio id="pajaro1">
+                            <source src="https://freesound.org/data/previews/416/416529_5121236-lq.mp3" type="audio/mpeg">
+                        </audio>
+                        <audio id="paloma">
+                            <source src="https://freesound.org/data/previews/9/9329_23035-lq.mp3" type="audio/mpeg">
+                        </audio>
+                        <audio id="cuervo">
+                            <source src="https://freesound.org/data/previews/9/9874_28679-lq.mp3" type="audio/mpeg">
+                        </audio>
+                        <audio id="buho">
+                            <source src="https://freesound.org/data/previews/20/20684_57750-lq.mp3" type="audio/mpeg">
+                        </audio>
+                        <div id="audControls">
+                        		<input type="button" onclick="plPajaro1(pajaro1)" value="Pájaro">
+                        		<input type="button" onclick="plPaloma(paloma)" value="Paloma">
+                        		<input type="button" onclick="plCuervo(cuervo)" value="Cuervo">
+                        		<input type="button" onclick="plBuho(buho)" value="Búho">
                         </div>
                 </article>
                 <article id="asideMQuery">
@@ -270,6 +291,19 @@ function iniciar()
 
 window.addEventListener('load', iniciar, false);
 
+//Controles de Audio:
 
+function plPajaro1(audio) {
+  audio.play(); 
+}
+function plPaloma(audio) {
+  audio.play(); 
+}
+function plCuervo(audio) {
+  audio.play(); 
+}
+function plBuho(audio) {
+  audio.play(); 
+}
 </script>
 </html>
