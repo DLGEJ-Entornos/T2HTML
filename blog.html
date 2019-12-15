@@ -118,16 +118,16 @@
                         <video id="medio" autoplay controls loop>
                             <source src="http://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4" type="video/mp4">
                         </video>
-                        <nav>
-                        		<input type="button" id="reiniciar" value="reiniciar">
+                        <div id="controles">
+                        		<input type="button" id="reiniciar" value="&#11156;">
                         		<input type="button" id="retrasar" value="&laquo;">
                         		<input type="button" id="play" value="&#9658;">
                         		<input type="button" id="adelantar" value="&raquo;">
-                        		<input type="button" id="silenciar" value="silenciar">
-                        		<label>Volumen</label>
                         		<input type="button" id="menosVolumen" value="-">
+                        		<input type="button" id="silenciar" value="&#128266;">
+                        		<!--label>Volumen</label-->
                         		<input type="button" id="masVolumen" value="+">
-                        </nav>
+                        </div>
                 </article>
                 <article id="asideMQuery">
                         <h3>Recientes</h3>
@@ -183,13 +183,6 @@
             <small>© EL CIRCUITO 2019</small>
         </footer>
 
-
-
-        <div>
-                <div>
-                   <a href="#"><img class="animacionLogo" src="https://www.eniun.com/wp-content/uploads/ENIUN@1x.png" alt="Eniun logo" width="74" height="33"></a>   
-                </div>
-            </div>
 </body>
 <script type="application/javascript">
  
@@ -210,30 +203,50 @@ function accionPlay()
 }
 function accionReiniciar()
 {
-  //Usar propiedad .currentTime
-  //Reproducir el vídeo
-  //Cambiar el valor del botón a ||
+    medio.currentTime = 1;
+    medio.play();
+		play.value='||';
 }
 function accionRetrasar()
 {
 	//Usar propiedad .curentTime
-  //Contemplar que no existen valores negativos
+    medio.currentTime -= 5;
+    if (medio.currentTime < 0) {
+      medio.currentTime = 1;
+      medio.play();
+    }
 }
 function accionAdelantar()
 {
-  //Contemplar que no existen valores mayores a medio.duration	
+    medio.currentTime += 5;
+    if (medio.currentTime > medio.duration) {
+      medio.currentTime = 60;
+    }
 }
 function accionSilenciar()
 {
 	//Utilizar medio.muted = true; o medio.muted = false;
+  if (medio.muted) {
+    medio.muted = false;
+    silenciar.value ='🔊';
+    document.querySelector("#silenciar").style.color = "black";
+  }else{
+    medio.muted = true;
+    silenciar.value ='🔇';
+    document.querySelector("#silenciar").style.color = "red";
+  }
 }
 function accionMasVolumen()
 {
-	//Contemplar que el valor máximo de volumen es 1
+  if (medio.volume < 1) {
+    medio.volume += 0.1;
+  }
 }
 function accionMenosVolumen()
 {
-	//Contemplar que el valor mínimo de volumen es 0
+  if (medio.volume > 0) {
+    medio.volume -= 0.1;
+  }
 }
 
 function iniciar() 
