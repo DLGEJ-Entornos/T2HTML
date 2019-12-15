@@ -150,6 +150,14 @@
                         		<input type="button" onclick="plBuho(buho)" value="Búho">
                         </div>
                 </article>
+
+                <article>
+                  <h3>Arte Canvas</h3>
+                  <canvas id="lienzo" width="550" height="413"> 
+                       El navegador no soporta canvas 
+                  </canvas> 
+                </article>
+
                 <article id="asideMQuery">
                         <h3>Recientes</h3>
                         <ul>
@@ -305,5 +313,64 @@ function plCuervo(audio) {
 function plBuho(audio) {
   audio.play(); 
 }
+
+// Arte Canvas
+            //
+var ctx=null, canvas=null;
+var img = new Image();
+
+function iniciarCnv() {
+  canvas=document.getElementById('lienzo');
+  ctx=canvas.getContext('2d');
+  
+  img.src = './img/marCanvas.jpg';
+
+  function dibujarFigs() {
+    //Circulo
+    ctx.beginPath();
+    ctx.arc(45, 40, 40, 0, 2 * Math.PI);
+    ctx.stroke();
+    ctx.fillStyle = "yellow";
+    ctx.fill();
+
+    //Rayos
+    ctx.beginPath();
+    ctx.moveTo(35, 90);
+    ctx.lineTo(35, 140);
+    ctx.moveTo(80, 80);
+    ctx.lineTo(130, 130);
+    ctx.moveTo(100, 40);
+    ctx.lineTo(150, 40);
+    ctx.lineWidth = 3;
+    ctx.strokeStyle = "yellow";
+    ctx.stroke();
+
+    //Rect
+    ctx.fillStyle = "brown";
+    ctx.fillRect(200, 250, 100, 50);
+    //ctx.lineWidth = 5;
+    //ctx.strokeStyle = "black";
+    //ctx.strokeRect(200, 70, 60, 50);
+
+    //Text
+    ctx.font = 'Bold 20px Arial';
+    ctx.textAlign = 'center';
+    ctx.fillStyle = 'white';
+    ctx.fillText('Náufrago', 300, 50);
+
+    console.log("figs Pintadas");
+  }
+  img.onload = function(){
+    ctx.drawImage(img, 0, 0);   
+    console.log("img dibujada");
+    dibujarFigs();
+  }
+  
+};
+window.addEventListener("load", iniciarCnv, false);
+
+
+
+
 </script>
 </html>
