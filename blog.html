@@ -377,15 +377,22 @@ function iniciarCnv() {
 //JUEGO 'DANGERLAB' CON CANVAS
 var lienzo=null, canvas=null;
 var x=250,y=250; //inicio jugador(coords)
-var lastPress=null; //Variable para guardar la tecla presionada
+var lastPress=null; 
 const KEY_LEFT=37;
 const KEY_UP=38;
 const KEY_RIGHT=39;
 const KEY_DOWN=40;
+const KEY_P=80;
+var pause = true;
 
 //MAPEADO
 const chunkLong = 100;
+var xZ=0, yZ=0, wZ=10,hZ=10; //dimensiones zona default
+
 const pjLong = 10;
+//MECANICAS
+var level = 0;
+var bActivada = false;
 
 
 function iniciarCnvJuego() {
@@ -393,17 +400,26 @@ function iniciarCnvJuego() {
     lienzo=canvas.getContext('2d'); //obtenemos el contexto de dibujo
     run();
 }
-
+function activarBomba() {
+  setTimeout(resultados,5000);
+  bActivada = true;
+  //indicador tiempo para explotar.
+}
+function resultados() {
+   
+  bActivada = false;  
+  pause = true;
+}
 function run(){
     //requestAnimationFrame(): informa al navegador de que quieres realizar una animación y solicita que el navegador programe el repintado de la ventana para el próximo ciclo de animación.
     requestAnimationFrame(run); //animación optimizada
     pintarLienzo(lienzo);
-    //activarBomba(); 
     accionesJuego();
     //resultados();
 }
 function accionesJuego(){
-    //Modificamos la dirección que tendrá nuestro player en función de la tecla presionada   
+  if (!pause) {
+    // Movimientos pj   
         switch (lastPress) {
           case KEY_RIGHT:
             x+=5; 
@@ -420,8 +436,7 @@ function accionesJuego(){
           default:
            console.log("tecla no mapeada"); 
         }
-  
-    //verificaremos si el player ha salido del canvas, en cuyo caso, haremos que aparezca por el otro lado:
+    //Muros 
     if(x >= canvas.width){
         x = canvas.width-10;
         lastPress = null;
@@ -435,13 +450,35 @@ function accionesJuego(){
         y=0;
         lastPress = null;
     }
+    if (!bActivada) {
+      activarBomba();
+    }
+
+  }else {
+    lienzo.textAlign='center';
+    lienzo.fillText('PAUSE',250,10);
+    //lienzo.textAlign='left';
+  }
+
+  if (lastPress == KEY_P) {
+    pause = !pause; 
+    lastPress = null;
+  }
+}
+function generarZona(x,y,width,height,level) {
+  //level 0-4 : cuadrados 100x100 esquinas   
+  
+  //level 4-8 : cuadrados 100x100 NO esquinas   
+  
+  //level 8-11 : cuadrados 100x50 y (viceversa) NO esquinas   
 }
 function pintarLienzo(lienzo){
     lienzo.fillStyle="#211A38"; //le ponemos un color al lienzo
     lienzo.fillRect(0,0,canvas.width,canvas.height); //Dibujamos el lienzo
     //zonas 
     lienzo.fillStyle='grey';
-    lienzo.fillRect(0,0,chunkLong,chunkLong);
+    generarZona(xZ,yZ,wZ,hZ,level);
+    lienzo.fillRect(xZ,yZ,wZ,yZ);
     //pj
     lienzo.fillStyle='#0f0';
     lienzo.fillRect(x,y,pjLong,pjLong); //Dibujamos el jugador: va por posición x,y y es de 10x10 
