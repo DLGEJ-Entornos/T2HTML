@@ -375,6 +375,7 @@ function iniciarCnv() {
   
 };
 //JUEGO 'DANGERLAB' CON CANVAS
+var ZonaGen = false;
 var lienzo=null, canvas=null;
 var x=250,y=250; //inicio jugador(coords)
 var lastPress=null; 
@@ -414,8 +415,12 @@ function resultados() {
   lienzo.fillRect(3*chunkLong,2*chunkLong,chunkLong,chunkLong);
   lienzo.fillRect(2*chunkLong,3*chunkLong,chunkLong,chunkLong);
 
-  if ((xZ < x && yZ < y) &&  //GANAR
-  (wZ > (x+pjLong) && hZ > (y+pjLong))     
+  //if ((xZ < x && yZ < y) &&  //GANAR
+  //(wZ > (x+pjLong) && hZ > (y+pjLong))     
+  //){
+  if (
+    x-xZ >= 0 && (x+wZ) - (x+pjLong) >= 0 &&
+    y-yZ >= 0 && (y+hZ) - (y+pjLong) >= 0
   ){
     alert("Has evitado la explosión! Entrando a Nivel: " + level++);
    }else{
@@ -423,6 +428,7 @@ function resultados() {
      level = 0;
    }
   bActivada = false;  
+  ZonaGen = false;
   pause = true;
 }
 function run(){
@@ -483,8 +489,7 @@ function accionesJuego(){
 function randGen(posibilidades) {
 return Math.floor(Math.random() * posibilidades);  
 }
-function generarZona(xZ,yZ,wZ,hZ,level) {
-  let argumentos = "";
+function generarZona() {
 //  debugger;
   //chunkLong = cL
   /*Level 0-4 : cuadrados 100x100 esquinas  
@@ -504,18 +509,18 @@ function generarZona(xZ,yZ,wZ,hZ,level) {
   if (level < 4) {
     xOp = randGen(2);  
     yOp = randGen(2);
-    //xOp == 0 ? x=0 : x=(canvas.width - chunkLong)  
-    //yOp == 0 ? y=0 : y=(canvas.height - chunkLong)  
-    if (xOp == 0) {
-      xZ=0; 
-    }else
-      xZ=(canvas.width - chunkLong);
+    xOp == 0 ? xZ=0 : xZ=(canvas.width - chunkLong)  
+    yOp == 0 ? yZ=0 : yZ=(canvas.height - chunkLong)  
 
-    if (yOp == 0) {
-      yZ=0; 
-    }else
-      yZ=(canvas.height- chunkLong);
+    //if (xOp == 0) {
+    //  xZ=0; 
+    //}else
+    //  xZ=(canvas.width - chunkLong);
 
+    //if (yOp == 0) {
+    //  yZ=0; 
+    //}else
+    //  yZ=(canvas.height- chunkLong);
     wZ= chunkLong;
     hZ= chunkLong;
 
@@ -527,19 +532,17 @@ function generarZona(xZ,yZ,wZ,hZ,level) {
     width = chunkLong; //rand 2
     height = chunkLong/2;
   }
-  argumentos = String(xZ) + "," + yZ + "," + wZ + "," + hZ;
-  console.log(argumentos);
-  return argumentos;
+  ZonaGen = true;
 }
 function pintarLienzo(lienzo){
     lienzo.fillStyle="#211A38"; //le ponemos un color al lienzo
     lienzo.fillRect(0,0,canvas.width,canvas.height); //Dibujamos el lienzo
     //zonas 
     lienzo.fillStyle='grey';
-    //lienzo.fillRect.apply(generarZona(xZ,yZ,wZ,hZ,level)); //pintar Zona
-    
-    xZ = 0, yZ = 0,wZ = 300, hZ = 300; //TEST
-    lienzo.fillRect(xZ,yZ,wZ,hZ); //TEST
+    if (!ZonaGen) {
+      generarZona(); 
+    }
+    lienzo.fillRect(xZ,yZ,wZ,hZ); //pintar Zona
     //pj
     lienzo.fillStyle='#0f0';
     lienzo.fillRect(x,y,pjLong,pjLong); //Dibujamos el jugador: va por posición x,y y es de 10x10 
