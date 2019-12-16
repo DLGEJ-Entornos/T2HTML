@@ -387,7 +387,7 @@ var pause = true;
 
 //MAPEADO
 const chunkLong = 100;
-var xZ=0, yZ=0, wZ=10,hZ=10; //dimensiones zona default
+var xZ=0, yZ=0, wZ=10,hZ=10; //dimensiones default de zona 
 
 const pjLong = 10;
 //MECANICAS
@@ -401,12 +401,27 @@ function iniciarCnvJuego() {
     run();
 }
 function activarBomba() {
-  setTimeout(resultados,5000);
+  setTimeout(resultados,3000);
   bActivada = true;
   //indicador tiempo para explotar.
 }
 function resultados() {
-   
+  //debugger;
+  //DIBUJANDO EXPLOSION
+  lienzo.fillRect(2*chunkLong,chunkLong,chunkLong,chunkLong);
+  lienzo.fillRect(chunkLong,2*chunkLong,chunkLong,chunkLong);
+  lienzo.fillRect(2*chunkLong,2*chunkLong,chunkLong,chunkLong);
+  lienzo.fillRect(3*chunkLong,2*chunkLong,chunkLong,chunkLong);
+  lienzo.fillRect(2*chunkLong,3*chunkLong,chunkLong,chunkLong);
+
+  if ((xZ < x && yZ < y) &&  //GANAR
+  (wZ > (x+pjLong) && hZ > (y+pjLong))     
+  ){
+    alert("Has evitado la explosión! Entrando a Nivel: " + level++);
+   }else{
+     alert("Te has abrasado!");
+     level = 0;
+   }
   bActivada = false;  
   pause = true;
 }
@@ -465,20 +480,66 @@ function accionesJuego(){
     lastPress = null;
   }
 }
-function generarZona(x,y,width,height,level) {
-  //level 0-4 : cuadrados 100x100 esquinas   
+function randGen(posibilidades) {
+return Math.floor(Math.random() * posibilidades);  
+}
+function generarZona(xZ,yZ,wZ,hZ,level) {
+  let argumentos = "";
+//  debugger;
+  //chunkLong = cL
+  /*Level 0-4 : cuadrados 100x100 esquinas  
+   x: 0 | lienzo.width - cL;  
+   y: 0 | lienzo.height - cL;
   
-  //level 4-8 : cuadrados 100x100 NO esquinas   
-  
-  //level 8-11 : cuadrados 100x50 y (viceversa) NO esquinas   
+  //Level 4-8 : cuadrados 100x100 NO esquinas  
+   x: 0+cL | lienzo.width - 2(cL)
+   y: 0+cL | lienzo.height - 2(cL)
+     
+  //Level 8-11 : cuadrados 100x50 y (viceversa) NO esquinas
+   x: 0+cL | lienzo.width - 2(width)
+   y: 0+cL | lienzo.height - 2(height)
+  */
+ level >= 4 ? level=0 : console.log("no has superado level4"); //parche para siempre jugar en level 0-4
+ let xOp, yOp, wOp,hOp; //opción final para esa var de origen aleatorio. 
+  if (level < 4) {
+    xOp = randGen(2);  
+    yOp = randGen(2);
+    //xOp == 0 ? x=0 : x=(canvas.width - chunkLong)  
+    //yOp == 0 ? y=0 : y=(canvas.height - chunkLong)  
+    if (xOp == 0) {
+      xZ=0; 
+    }else
+      xZ=(canvas.width - chunkLong);
+
+    if (yOp == 0) {
+      yZ=0; 
+    }else
+      yZ=(canvas.height- chunkLong);
+
+    wZ= chunkLong;
+    hZ= chunkLong;
+
+  }else if(level < 8) {
+    
+    width = chunkLong;
+    height = chunkLong;
+  }else if(level < 11) {
+    width = chunkLong; //rand 2
+    height = chunkLong/2;
+  }
+  argumentos = String(xZ) + "," + yZ + "," + wZ + "," + hZ;
+  console.log(argumentos);
+  return argumentos;
 }
 function pintarLienzo(lienzo){
     lienzo.fillStyle="#211A38"; //le ponemos un color al lienzo
     lienzo.fillRect(0,0,canvas.width,canvas.height); //Dibujamos el lienzo
     //zonas 
     lienzo.fillStyle='grey';
-    generarZona(xZ,yZ,wZ,hZ,level);
-    lienzo.fillRect(xZ,yZ,wZ,yZ);
+    //lienzo.fillRect.apply(generarZona(xZ,yZ,wZ,hZ,level)); //pintar Zona
+    
+    xZ = 0, yZ = 0,wZ = 300, hZ = 300; //TEST
+    lienzo.fillRect(xZ,yZ,wZ,hZ); //TEST
     //pj
     lienzo.fillStyle='#0f0';
     lienzo.fillRect(x,y,pjLong,pjLong); //Dibujamos el jugador: va por posición x,y y es de 10x10 
