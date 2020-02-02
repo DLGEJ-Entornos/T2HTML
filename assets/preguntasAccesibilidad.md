@@ -27,10 +27,12 @@ UD9 Diseño de webs accesibles
   ACTIVIDAD 1.4
 =============
 
-  * La herramienta explica el contenido si se han utilizado las etiquetas de marcado adecuadas de web semántica.
+  * La herramienta explica el contenido que tiene el foco o al que se acaba de acceder (al abrir una nueva pestaña). Si se han utilizado las etiquetas de marcado adecuadas de web semántica también ofrecerá información enriquecida.
   * Te enteras perfectamente de la navegación y puedes usarlo sin problemas. Lo que ocurre es que el dictado puede ser estresante si hay muchos links juntos con categorias muy poco generales. Por ello, es importante organizar los apartados jerarquicamente y estructurar la web para un uso accesible.
-  * Si se lee una imagen importada por enlace, como iconos de boostrap, no la identificará correctamente y la procesará como enlace en lugar de leer su descripción alternativa. 
-  * Si no incluimos la etiqueta title en las páginas, la extensión no indica a que página acabamos de acceder.
+  * Si se lee una imagen importada por enlace, como iconos de boostrap, no la identificará correctamente y la procesará como enlace en lugar de leer su descripción alternativa o tratarla como icono con enlace. 
+  * Si no incluimos la etiqueta title en los iconos con links, el narrador no podrá dar información del elemento.
+  * Al leer la tabla de precios lee contenido del plan pero se corta a mitad de tabla.
+  * En el icono de lupa nos dice: "Etiqueta de encabezado, enlace interno", con lo cual esta mal indicada. Deberiamos poner un title con "Buscar".
 
 ## (A partir de aqui mejoras en el proyecto)
 
