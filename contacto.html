@@ -80,8 +80,8 @@
                                 <input required id="mail" placeholder="Email" name='email' type='email' /><br><br>
                                 <input type="number" id="edad" required placeholder="Edad" name="edad" min="18" max="99"><br><br>
 
-                                <label id="lblSexo">Sexo: </label> <br>
-                                <select name="select">
+                                <label id="lblSexo" for="genero">Sexo: </label> <br>
+                                <select name="select" id="genero">
                                     <option value="value1">Hombre</option>
                                     <option value="value2" selected>Mujer</option>
                                 </select><br><br>
@@ -91,8 +91,10 @@
                         <br>
                         <fieldset>
                             <legend>INDICA TU CONSULTA</legend>
-                            <textarea  placeholder="Escribe aquí tu mensaje." required name="textarea" rows="10"
+                            <label for="txt" style="visibility:hidden">txt</label>
+                            <textarea id=txt" placeholder="Escribe aquí tu mensaje." required name="textarea" rows="10"
                                 cols="50"></textarea><br>
+                            <label for="polCook" style="visibility:hidden">polCook</label>
                             <input checked type="checkbox" name="polYcookies" id="polCook">
                             <span id="cook2">¿Aceptas la</span> <a href="#">política de privacidad y cookies</a>?
                         </fieldset>
