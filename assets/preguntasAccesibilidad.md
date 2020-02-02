@@ -80,17 +80,7 @@ ACTIVIDAD 4.2 TAW
 
 ACTIVIDAD 4.3 Cynthia Says
 =============
-### Inicio 
 ![](./CyntiaSReport-Inicio.png 'Cyntia Inicio')
-
-### Blog 
-![](./CyntiaSReport-Blog.png 'Cyntia Blog')
-
-### Servicios 
-![](./CyntiaSReport-Servicios.png 'Cyntia Servicios')
-
-### Contacto 
-![](./CyntiaSReport-Contacto.png 'Cyntia Contacto')
 
 ACTIVIDAD 4.4 
 =============
