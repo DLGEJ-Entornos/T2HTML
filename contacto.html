@@ -69,11 +69,16 @@
                         <fieldset>
                             <legend>DATOS PERSONALES</legend>
                             <div>
-                                <input required placeholder="Nombre" autofocus name='nombre' type='text' /><br>
-                                <input required placeholder="Apellidos" name='apellidos' type='text' /><br>
-                                <input required placeholder="Teléfono" name='tel' type='tel' /><br>
-                                <input required placeholder="Email" name='email' type='email' /><br><br>
-                                <input type="number" required placeholder="Edad" name="edad" min="18" max="99"><br><br>
+                                <label for="nom" style="visibility:hidden">nombre</label>
+                                <label for="ap" style="visibility:hidden">apellidos</label>
+                                <label for="tel" style="visibility:hidden">telefono</label>
+                                <label for="mail" style="visibility:hidden">mail</label>
+                                <label for="edad" style="visibility:hidden">edad</label>
+                                <input required id="nom" placeholder="Nombre" autofocus name='nombre' type='text' /><br>
+                                <input required id="ap" placeholder="Apellidos" name='apellidos' type='text' /><br>
+                                <input required id="tel" placeholder="Teléfono" name='tel' type='tel' /><br>
+                                <input required id="mail" placeholder="Email" name='email' type='email' /><br><br>
+                                <input type="number" id="edad" required placeholder="Edad" name="edad" min="18" max="99"><br><br>
 
                                 <label id="lblSexo">Sexo: </label> <br>
                                 <select name="select">
