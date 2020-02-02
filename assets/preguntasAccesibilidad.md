@@ -5,7 +5,9 @@ UD9 Diseño de webs accesibles
 =============
 
   1. Pulsa el botón amarillo -> Daltonismo, Ceguera.  
+
   2. Menú a la derecha -> Dislexia, Ceguera.
+
   3. Errores mediante sonido -> Sordera.
 
   ACTIVIDAD 1.2
@@ -34,7 +36,7 @@ UD9 Diseño de webs accesibles
   * Al leer la tabla de precios lee contenido del plan pero se corta a mitad de tabla.
   * En el icono de lupa nos dice: "Etiqueta de encabezado, enlace interno", con lo cual esta mal indicada. Deberiamos poner un title con "Buscar".
 
-## (A partir de aqui mejoras en el proyecto)
+## (A partir de aqui mejoras en el proyecto. [VER](https://dlgej-entornos.github.io/T2HTML/index.html) )
 
 ACTIVIDAD 3.1 WAVE 
 =============
@@ -66,6 +68,25 @@ ACTIVIDAD 4.1 Textise
 
 ACTIVIDAD 4.2 TAW
 =============
+
+Las diferentes pautas las clasificamos de la siguiente forma:
+
+1. Perceptible
+
+  La información y los componentes de la interfaz de usuario deben ser presentados a los usuarios de modo que ellos puedan percibirlos.
+
+2. Operable
+
+  Los componentes de la interfaz de usuario y la navegación deben ser operables.
+
+3. Comprensible
+
+  La información y el manejo de la interfaz de usuario deben ser comprensibles.
+
+4. Robusto
+
+  El contenido debe ser suficientemente robusto como para ser interpretado de forma fiable por una amplia variedad de aplicaciones de usuario, incluyendo las ayudas técnicas.
+
 ### Inicio 
 ![](./TawReport-Inicio.png 'Tawdis Inicio')
 
@@ -83,6 +104,7 @@ ACTIVIDAD 4.2 TAW
 ACTIVIDAD 4.3 Cynthia Says
 =============
 ![](./CyntiaSReport-Inicio.png 'Cyntia Inicio')
+
   El error 1194.22 nos refiere al uso de alt o longdesc (si necesitamos muchos caractéres) para describir imágenes o recursos no textuales.
   El error a.4 indica que los elementos Object no pueden estar vacíos, además debe usarse el atributo aria-label. 
 
@@ -91,7 +113,4 @@ ACTIVIDAD 4.4
   El atributo Aria Role, afecta a los usuarios que usan tecnologias de accesibilidad. Permite modificar el rol semántico de los tags html (un botón que sea como un encabezado) pero sin modificar su funcionalidad.
 
   El atributo Aria Hidden permite establecer si el elemento será expuesto a la API de accesibilidad o no. Se usa para evitar información redundante o inecesaria para los usuario de accesibilidad.
-
-ACTIVIDAD 5.1 
-=============
 
