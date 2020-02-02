@@ -83,10 +83,14 @@ ACTIVIDAD 4.2 TAW
 ACTIVIDAD 4.3 Cynthia Says
 =============
 ![](./CyntiaSReport-Inicio.png 'Cyntia Inicio')
+  El error 1194.22 nos refiere al uso de alt o longdesc (si necesitamos muchos caractéres) para describir imágenes o recursos no textuales.
+  El error a.4 indica que los elementos Object no pueden estar vacíos, además debe usarse el atributo aria-label. 
 
 ACTIVIDAD 4.4 
 =============
+  El atributo Aria Role, afecta a los usuarios que usan tecnologias de accesibilidad. Permite modificar el rol semántico de los tags html (un botón que sea como un encabezado) pero sin modificar su funcionalidad.
 
+  El atributo Aria Hidden permite establecer si el elemento será expuesto a la API de accesibilidad o no. Se usa para evitar información redundante o inecesaria para los usuario de accesibilidad.
 
 ACTIVIDAD 5.1 
 =============
